@@ -23,7 +23,7 @@ public class GeneralResultKey implements Serializable {
     private UUID cyclistId;
 
     @Column(name = "competitionId")
-    private Long competitionId;
+    private UUID competitionId;
 
     @Override
     public boolean equals(Object o) {
