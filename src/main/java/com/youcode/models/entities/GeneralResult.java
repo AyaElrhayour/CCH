@@ -1,6 +1,7 @@
 package com.youcode.models.entities;
 
 
+import com.youcode.models.entities.embeddables.GeneralResultKey;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,9 +17,8 @@ import java.util.UUID;
 @NoArgsConstructor
 public class GeneralResult {
 
-    @Id
-    @UuidGenerator
-    private UUID id;
+    @EmbeddedId
+    private GeneralResultKey id;
 
     @Column(name = "overallTime")
     private Duration overallTime;
