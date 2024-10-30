@@ -1,4 +1,4 @@
-package com.youcode.repositories;
+package com.youcode.repositories.base;
 
 
 import java.util.List;
